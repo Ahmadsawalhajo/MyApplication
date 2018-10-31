@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
 
 android {
     compileSdkVersion 28
@@ -26,3 +29,28 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'sawalha'
+
+    publishedGroupId = 'com.ltessards'
+    libraryName = 'Myapplication'
+    artifact = 'myapplication'
+
+    libraryDescription = 'This view is a container that supports diagonal scroll and fling gesture. It is based on AOSP HorizontalScrollView.'
+
+    siteUrl = 'http://www.akhbarak.net/'
+    gitUrl = 'https://github.com/Ahmadsawalhajo/MyApplication'
+
+    libraryVersion = '0.1.1'
+
+    developerId = 'ahmadsalehjo'
+    developerName = 'Ahmad Saleh'
+    developerEmail = 'ahmadsalehjo@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+apply from: 'D:\\Repository\\MyApplication\\testn.txt'
+
